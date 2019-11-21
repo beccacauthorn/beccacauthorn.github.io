@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-#title: My data science journey
+title: Becca Cauthorn 
 
 # Short description of your site
 description: This is where I will talk about my journey with data science
@@ -67,7 +67,7 @@ author:
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  rss: true
+  #rss: true
   email: beccacauthorn@gmail.com
   github: beccacauthorn
 #  linkedin: 
