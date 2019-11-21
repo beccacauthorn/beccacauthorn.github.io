@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: My data science journey
+#title: My data science journey
 
 # Short description of your site
 description: This is where I will talk about my journey with data science
@@ -38,7 +38,7 @@ avatar: "/img/avatar-icon.png"
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#20B2AA"
+navbar-col: "#778899"
 navbar-text-col: "#404040"
 navbar-children-col: "#F5F5F5"
 page-col: "#FFFFFF"
@@ -60,7 +60,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
+  name: Becca Cauthorn 
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
