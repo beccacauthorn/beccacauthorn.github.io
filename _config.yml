@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: Becca Cauthorn 
+title: Becca Cauthorn
 
 # Short description of your site
 description: This is where I will talk about my journey with data science
@@ -21,9 +21,9 @@ description: This is where I will talk about my journey with data science
 # List of links in the navigation bar
 navbar-links:
   About Me: "About Me"
- Boston-based Data Scientist
- Lambda School Data Science Program 2019 (current)
- My name is Becca Cauthorn. I am a data scientist in Boston with a passion for bringing data science expertise to the non-profit industry.
+ "Boston-based Data Scientist"
+ "Lambda School Data Science Program 2019 (current)"
+ "My name is Becca Cauthorn. I am a data scientist in Boston with a passion for bringing data science expertise to the non-profit industry."
 
     #- Learn markdown: "http://www.markdowntutorial.com/"
   #Author's home: "http://deanattali.com"
