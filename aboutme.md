@@ -1,13 +1,12 @@
 ---
 layout: page
 title: About me
-subtitle: Boston-based Data Scientist 
+subtitle: Becca Cauthorn 
 ---
-
-My name is Becca Cauthorn. I am a data-scientist with a passion for working in the non-profit industry. 
+I am a Boston-based data scientist with a passion for working in the non-profit industry. 
 
 Interests:
-- Utilizing data science to solve pressing social challenges 
+- Utilizing data science to solve social challenges 
 - Learning about new technologies and how they can make life easier for people
 - Working with data and analysis in Python
 - Data wrangling and creating data visualizations and dashboards
