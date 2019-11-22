@@ -4,9 +4,7 @@
 title: Becca Cauthorn
 
 # Short description of your site
-description: "This is a space where I share my data science journey"
-
-  "I specialize in data wrangling and data visualization."
+description: This is where I share my data science journey
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
