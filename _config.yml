@@ -20,7 +20,7 @@ description: This is where I share my data science journey
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "About Me"
+  About Me: "aboutme"
  
     #- Learn markdown: "http://www.markdowntutorial.com/"
   #Author's home: "http://deanattali.com"
