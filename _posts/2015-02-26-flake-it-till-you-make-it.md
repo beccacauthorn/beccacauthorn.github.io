@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Flake it till you make it
-subtitle: Excerpt from Soulshaping by Jeff Brown
-bigimg: /img/path.jpg
-tags: [books, test]
+title: Unit 1 Data Storytelling Project 
+subtitle: Median Team Age Vs. Wins: 2018 World Cup & Barclays Premier League 2017/2018 Season 
+bigimg: /img/450px-Ronaldinho_and_Khedira.jpg
+tags: [visualization, storytelling, soccer]
 ---
 
-Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who hit me, no one would say that I had a commitment problem. But if I walk away from a seemingly secure route because my soul has other ideas, I am a flake?
+I have been passionate about soccer (or football if you aren't from the U.S.) since I started playing the game at age 5. I loved the smell of the grass on a crisp game-day morning, the rush of adrenaline as I sped towards the ball, getting to know my teammates, and the excitment of learning new skills and strategies at each game and practice session. 
 
-The truth is that no one else can definitively know the path we are here to walk. It’s tempting to listen—many of us long for the omnipotent other—but unless they are genuine psychic intuitives, they can’t know. All others can know is their own truth, and if they’ve actually done the work to excavate it, they will have the good sense to know that they cannot genuinely know anyone else’s. Only soul knows the path it is here to walk. Since you are the only one living in your temple, only you can know its scriptures and interpretive structure.
+As I have grown older and begun to follow professional leagues and competitions, I have become increasingly interested in how data and technology is being used to inform the game as well as allow players to stay at their peak for longer. In order to further explore this topic I decided to use my first data storytelling project to look at what if any relationship there might be between average player age per team and a team's number of wins or points. I found a dataset that had international competition as well as club competition data for 2017 and 2018.  
 
 At the heart of the struggle are two very different ideas of success—survival-driven and soul-driven. For survivalists, success is security, pragmatism, power over others. Success is the absence of material suffering, the nourishing of the soul be damned. It is an odd and ironic thing that most of the material power in our world often resides in the hands of younger souls. Still working in the egoic and material realms, they love the sensations of power and focus most of their energy on accumulation. Older souls tend not to be as materially driven. They have already played the worldly game in previous lives and they search for more subtle shades of meaning in this one—authentication rather than accumulation. They are often ignored by the culture at large, although they really are the truest warriors.
 
