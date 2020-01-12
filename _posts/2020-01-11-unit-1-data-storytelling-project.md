@@ -54,7 +54,7 @@ Looking at the Kernel Density Estimation plot(kde) of teams median age, we see a
 
 ![kdeplot](/img/kdeplotworldcupteams.PNG)
 
-Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create a situation of survivor bias. Additionally, there are a greater number of teams with a median age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
+Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create survivor bias. Additionally, there are a greater number of teams with a median age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
 
 ![scatterplot](/img/scatterplotworldcupteams.PNG)
 
