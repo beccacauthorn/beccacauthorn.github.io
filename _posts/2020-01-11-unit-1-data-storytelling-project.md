@@ -74,4 +74,4 @@ I quickly realized that due to the complicated nesting structure of the dataset 
 
 ![scatterplotpremierleagueteampoints](/img/premierleagueteamstotalpointsscatter.PNG)
 
-We see a similar distribution as in the wins scatter plot due to there being a greater number of teams with a median age of 27 and 28. The majority of teams in this case, regardless of age, have 50 points or less. The team with the most points at 100 is 20 points ahead of its nearest neighbor who earned 80 points. No teams with an average age below about 27.5 years earned more than 50 points. 
+We see a similar distribution as the wins scatter plot due to there being a greater number of teams with a median age of 27 and 28. The majority of teams in this case, regardless of age, have 50 points or less. The team with the most points at 100, is 20 points ahead of its nearest neighbor who earned 80 points. No teams with an average age below about 27.5 years and greater than about 28 years earned more than 50 points. 
