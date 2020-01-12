@@ -72,4 +72,4 @@ In order to look further into the relationship between average player age and te
 
 I quickly realized that due to the complicated nesting structure of the dataset and the difficulties of linking points earned per game with team ID, I decided to use the [official data](https://www.premierleague.com/tables?co=1&se=79&ha=-1) from the Barclays Premier League website to manually create a dataframe of the total points earned per team during the 2017/2018 season. 
 
-![scatterplotpremierleagueteampoints](/img/Premier League Teams Total Points Scatter.png)
+![scatterplotpremierleagueteampoints](/img/premierleagueteamstotalpointsscatter.PNG)
