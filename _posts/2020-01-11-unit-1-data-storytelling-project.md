@@ -31,5 +31,8 @@ pd.Timestamp('2018-06-01')
 
 player_age = (pd.Timestamp('2018-06-14') - pd.to_datetime(players_teams_merged['birthDate'])) / np.timedelta64(1, 'Y')
 
-players_teams_merged['player_age'] = player_age
-![players_teams_merged dataframe](/img/players_id_merged.PNG)
+The following step was to use groupby 'currentNationalTeamId' and find the median age of each team:
+
+team_age_mean = players_teams_merged.groupby(by='WorldCupTeamIDs')[['player_age']].mean()
+team_age_mean.player_age = pd.to_numeric(team_age_mean.player_age)
+![players_teams_merged dataframe](/img/WorldCup_ids_and_age.PNG)
