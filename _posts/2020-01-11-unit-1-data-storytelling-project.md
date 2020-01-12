@@ -27,7 +27,7 @@ teams_df = pd.DataFrame({'WorldCupTeamIDs': teamIds_world_cup})
 players_teams_merged = pd.merge(players_new, teams_df, left_on='currentNationalTeamIdStr', right_on= 'WorldCupTeamIDs', how='inner')
 ~~~
 
-The next challenge was to use the players birth date to apporixmate their age at the time of the 2018 World Cup. I decided to use the starting month of the World Cup competition, June 1, 2018, in order to approximate the players ages: 
+The next challenge was to use the players birth date to apporixmate their age at the time of the 2018 World Cup. I decided to use the starting month of the World Cup competition, June 1, 2018, in order to approximate the players' ages: 
 
 ~~~
 pd.Timestamp('2018-06-01')
@@ -41,5 +41,11 @@ team_age_mean = players_teams_merged.groupby(by='WorldCupTeamIDs')[['player_age'
 team_age_mean.player_age = pd.to_numeric(team_age_mean.player_age)
 ~~~
 
+To look at the relationship between median team age and number of wins, I created a new column in my dataframe with each of the teams total number of wins during the competition:
 
-
+~~~
+winner_list = [str(match['winner']) for match in matches_list]
+winner_df = pd.DataFrame({'WorldCupTeamIDs': winner_list})
+wins = winner_df.groupby('WorldCupTeamIDs')['WorldCupTeamIDs'].count()
+team_age_mean['wins'] = wins
+~~~
