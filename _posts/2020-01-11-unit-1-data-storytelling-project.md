@@ -38,6 +38,6 @@ The following step was to use groupby 'currentNationalTeamId' and find the media
 team_age_mean = players_teams_merged.groupby(by='WorldCupTeamIDs')[['player_age']].mean()
 team_age_mean.player_age = pd.to_numeric(team_age_mean.player_age)
 ~~~
-![players_teams_merged dataframe](/img/WorldCup_ids_and_age.PNG)
+
 
 
