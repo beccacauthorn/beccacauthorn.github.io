@@ -50,7 +50,7 @@ wins = winner_df.groupby('WorldCupTeamIDs')['WorldCupTeamIDs'].count()
 team_age_mean['wins'] = wins
 ~~~
 
-Looking at the results:
+Looking at the kde plot of teams median age, we see a steady increase in terms of density of teams with a median age of 26, 27, and 28, and then see this density take a sharp drop. The range of the plot is also fairly narrow, with median team age being no less than 24 and not greater than 31. 
 
 ![kdeplot](/img/kdeplotworldcupteams.PNG)
 
