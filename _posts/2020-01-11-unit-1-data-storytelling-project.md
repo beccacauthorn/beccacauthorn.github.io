@@ -58,12 +58,12 @@ Due to the World Cup being a knockout competition, most teams will not play the 
 
 ![scatterplot](/img/scatterplotworldcupteams.PNG)
 
-In order to mitigate the effects of survivor bias, I decieded to run the same code on this dataset but using the Barclays Premier League 2017/2018 competition data due to all teams playing the same number of matches(38). 
+In order to mitigate the effects of survivor bias, I decieded to run the same code on this dataset but using the Barclays Premier League 2017/2018 competition data due to all teams playing the same number of matches (38). 
 
 The kde plot of the Premier League teams median age shows a fairly small spread, with median team age falling between about 26-28 years. We also see a sharper increase in terms of density of teams from 27 to 28 years and a sharp drop in median age after 28 years. 
 
 ![engladplayerskde](/img/premierleaguemedianplayeragekde.PNG)
 
-Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create survivor bias. Additionally, there are a greater number of teams with a median age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
+There are a greater number of teams with a median age of 27 and 28. Therefore, we would expect to see a greater number of wins for teams in this age range, which is the case, with the team with the most number of wins having an average age of about 28.5. The majority of teams, regardless of age, have less than 15 wins. 
 
 ![scatterplotpremierleagueteamwins](/img/premierleaguenumberofwinsscatter.PNG)
