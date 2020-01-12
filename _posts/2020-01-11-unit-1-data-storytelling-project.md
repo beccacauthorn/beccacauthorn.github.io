@@ -19,8 +19,17 @@ teamIds = [list(match['teamsData'].keys()) for match in matches_list]
 
 teamIds_world_cup = np.unique(np.array(teamIds))
 
-I then created a new dataframe with the World Cup IDs and merged it with the players_new dataframe: 
+I then created a new dataframe with the World Cup IDs and merged it with the players_new dataframe in order to obtain just the players that played in the World Cup:
 
 teams_df = pd.DataFrame({'WorldCupTeamIDs': teamIds_world_cup})
 
 players_teams_merged = pd.merge(players_new, teams_df, left_on='currentNationalTeamIdStr', right_on= 'WorldCupTeamIDs', how='inner')
+
+The next challenge was to use the players birth date to apporixmate their age at the time of the 2018 World Cup. I decided to use the starting month of the World Cup competition, June 1, 2018, in order to approximate the players ages: 
+
+pd.Timestamp('2018-06-01')
+
+player_age = (pd.Timestamp('2018-06-14') - pd.to_datetime(players_teams_merged['birthDate'])) / np.timedelta64(1, 'Y')
+
+players_teams_merged['player_age'] = player_age
+![players_teams_merged dataframe](/img/players_id_merged.PNG)
