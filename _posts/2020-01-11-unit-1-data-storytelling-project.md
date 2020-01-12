@@ -10,7 +10,11 @@ I have been passionate about soccer (or football if you aren't from the U.S.) si
 
 As I have grown older and begun to follow professional leagues and competitions, I have become increasingly interested in how data and technology is being used to inform the game as well as allow players to stay at their peak for longer. In order to further explore this topic I decided to use my first data storytelling project to look at what if any relationship there might be between average player age per team and a team's number of wins or points. I found a [dataset](https://figshare.com/collections/Soccer_match_event_dataset/4415000/3) that had international competition as well as club competition data for 2017 and 2018.  
 
-I began my project with the player dataset in order to obtain each player's birthdate and the ID number of the current national team they were playing for. 
+I began my project with the player dataset in order to obtain each player's birthdate and the ID number of the current national team they were playing for. I then created a players_new dataset with just this information. 
 ![players](/img/playersdf.PNG)
 
-A soulful notion of success rests on the actualization of our innate image. Success is simply the completion of a soul step, however unsightly it may be. We have finished what we started when the lesson is learned. What a fear-based culture calls a wonderful opportunity may be fruitless and misguided for the soul. Staying in a passionless relationship may satisfy our need for comfort, but it may stifle the soul. Becoming a famous lawyer is only worthwhile if the soul demands it. It is an essential failure if you are called to be a monastic this time around. If you need to explore and abandon ten careers in order to stretch your soul toward its innate image, then so be it. Flake it till you make it.
+My next step was to look at the matches World Cup dataset in order to extract the team IDs of all 32 teams who played in the 2018 World Cup and merge this information with the players_new datatset. The challenge I ran into during this stage was that the World Cup teams dataset included some nested dictionaries. I used a list comprehension to iterate over the nested dictionary and obtain just the team IDs: 
+
+teamIds = [list(match['teamsData'].keys()) for match in matches_list]
+teamIds_world_cup = np.unique(np.array(teamIds))
+
