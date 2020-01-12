@@ -50,7 +50,7 @@ wins = winner_df.groupby('WorldCupTeamIDs')['WorldCupTeamIDs'].count()
 team_age_mean['wins'] = wins
 ~~~
 
-Looking at the kde plot of teams median age, we see a steady increase in terms of density of teams with a median age of 26, 27, and 28, and then see this density take a sharp drop. The range of the plot is also fairly narrow, with median team age being no less than 24 and not greater than 31. 
+Looking at the Kernel Density Estimation plot(kde) of teams median age, we see a steady increase in terms of density of teams with a median age of 26, 27, and 28, and then see this density take a sharp drop. The range of the plot is also fairly narrow, with median team age being no less than 24 and not greater than 31. 
 
 ![kdeplot](/img/kdeplotworldcupteams.PNG)
 
@@ -59,5 +59,7 @@ Due to the World Cup being a knockout competition, most teams will not play the 
 ![scatterplot](/img/scatterplotworldcupteams.PNG)
 
 In order to mitigate the effects of survivor bias, I decieded to run the same code on this dataset but using the Barclays Premier League 2017/2018 competition data due to all teams playing the same number of matches. 
+
+The kde plot of the Premier League Teams median age shows a fairly small spread, with median team age falling between about 26-28 years. We also see a sharper increase in terms of density of teams from 27 to 28 years and a sharp drop in median age after 28 years. 
 
 ![engladplayerskde](/img/premierleaguemedianplayeragekde.PNG)
