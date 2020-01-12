@@ -49,3 +49,7 @@ winner_df = pd.DataFrame({'WorldCupTeamIDs': winner_list})
 wins = winner_df.groupby('WorldCupTeamIDs')['WorldCupTeamIDs'].count()
 team_age_mean['wins'] = wins
 ~~~
+
+Looking at the results:
+![kdeplot](/img/kdeplotworldcupteams.PNG)
+![scatterplot](/img/scatterplotworldcupteams.PNG)
