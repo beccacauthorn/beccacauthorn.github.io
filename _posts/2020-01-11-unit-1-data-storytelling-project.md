@@ -70,4 +70,4 @@ There are a greater number of teams with a median age of 27 and 28. Therefore, w
 
 In order to look further into the relationship between average player age and team success, I decided to look at the total number of points earned per team during the 2017/2018 Barclays Premier League season. This number includes points earned for both wins (3) and draws (1) and this point total in turn decides the winner of the competition. 
 
-I quickly realized that due to the complicated nesting structure of the dataset and the difficulties of linking points earned per game with team ID, I decided to use the [official data](https://www.premierleague.com/tables?co=1&se=79&ha=-1) from the Barclays Premier League website to create a dataframe of the total points earned per team during the 2017/2018 season. 
+I quickly realized that due to the complicated nesting structure of the dataset and the difficulties of linking points earned per game with team ID, I decided to use the [official data](https://www.premierleague.com/tables?co=1&se=79&ha=-1) from the Barclays Premier League website to manually create a dataframe of the total points earned per team during the 2017/2018 season. 
