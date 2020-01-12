@@ -51,5 +51,7 @@ team_age_mean['wins'] = wins
 ~~~
 
 Looking at the results:
+
 ![kdeplot](/img/kdeplotworldcupteams.PNG)
+
 ![scatterplot](/img/scatterplotworldcupteams.PNG)
