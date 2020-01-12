@@ -19,3 +19,8 @@ teamIds = [list(match['teamsData'].keys()) for match in matches_list]
 
 teamIds_world_cup = np.unique(np.array(teamIds))
 
+I then created a new dataframe with the World Cup IDs and merged it with the players_new dataframe. 
+
+teams_df = pd.DataFrame({'WorldCupTeamIDs': teamIds_world_cup})
+
+players_teams_merged = pd.merge(players_new, teams_df, left_on='currentNationalTeamIdStr', right_on= 'WorldCupTeamIDs', how='inner')
