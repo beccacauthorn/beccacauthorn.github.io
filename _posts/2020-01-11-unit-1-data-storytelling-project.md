@@ -67,3 +67,5 @@ The kde plot of the Premier League teams median age shows a fairly small spread,
 There are a greater number of teams with a median age of 27 and 28. Therefore, we would expect to see a greater number of wins for teams in this age range, which is the case, with the team with the most number of wins having an average age of about 28.5. The majority of teams, regardless of age, have less than 15 wins. 
 
 ![scatterplotpremierleagueteamwins](/img/premierleaguenumberofwinsscatter.PNG)
+
+In order to look further into the relationship between average player age and team success, I decided to look at the total number of points earned per team during the 2017/2018 Barclays Premier League season. This number includes points earned for both wins (3) and draws (1) and this point total in turn decides the winner of the competition. 
