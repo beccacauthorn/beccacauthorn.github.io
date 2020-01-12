@@ -59,3 +59,5 @@ Due to the World Cup being a knockout competition, most teams will not play the 
 ![scatterplot](/img/scatterplotworldcupteams.PNG)
 
 In order to mitigate the effects of surivior bias, I decieded to run the same code on this dataset using the Barclays Premier League 2017/2018 competition in England due to all teams playing the same number of matches during the competition year. 
+
+![engladplayerskde](/img/premierleaguemedianplayeragekde.PNG)
