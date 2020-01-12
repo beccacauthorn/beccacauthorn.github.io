@@ -54,4 +54,6 @@ Looking at the kde plot of teams median age, we see a steady increase in terms o
 
 ![kdeplot](/img/kdeplotworldcupteams.PNG)
 
+Due to the World Cup being a knockout competition, most teams will not play the same number of matches, thus creating a situation of survivor bias. This is also coupled with the fact that there are a greater number of teams with a median age of 27 and 28 which can also create bias in terms of the number of wins we see in this age range. 
+
 ![scatterplot](/img/scatterplotworldcupteams.PNG)
