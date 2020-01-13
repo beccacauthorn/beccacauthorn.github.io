@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Unit 1 Data Storytelling Project 
+subtitle: How player age affects success 
+bigimg: /img/450px-Ronaldinho_and_Khedira.jpg
+tags: [visualization, storytelling, soccer]
 ---
 
 I have been passionate about soccer (or football if you aren't from the U.S.) since I started playing the game at age 5. I loved the smell of the grass on a crisp game-day morning, the rush of adrenaline as I sped towards the ball, getting to know my teammates, and the excitement of learning new skills and strategies at each game and practice session. 
