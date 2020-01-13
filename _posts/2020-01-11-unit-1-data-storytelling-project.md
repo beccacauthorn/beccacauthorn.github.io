@@ -51,27 +51,27 @@ team_age_mean['wins'] = wins
 
 Looking at the Kernel Density Estimation plot (KDE) of teams average age, we see a steady increase in terms of density of teams with an average age of 26, 27, and 28, and then see this density take a sharp drop. The range of the plot is also fairly narrow, with average team age being no less than 24 and not greater than 31. 
 
-![kdeplot](/img/kdeplotworldcupteams.PNG)
+![kdeplot](/img/avgworldcupplayerage.PNG)
 
 Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create [survivor bias](https://en.wikipedia.org/wiki/Survivorship_bias). Additionally, there are a greater number of teams with an average age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
 
-![scatterplot](/img/scatterplotworldcupteams.PNG)
+![scatterplot](/img/avgageworldcupscatter.PNG)
 
 In order to mitigate the effects of survivor bias, I decided to run the same code that I ran on the World Cup dataset but on the Barclays Premier League 2017/2018 competition dataset due to all teams playing the same number of matches (38). 
 
 The KDE plot of the Premier League teams average age shows a fairly small spread, with average team age falling between about 26-28 years. We also see a sharper increase in terms of density of teams from 27 to 28 years and a sharp drop after 28 years. 
 
-![engladplayerskde](/img/premierleaguemedianplayeragekde.PNG)
+![engladplayerskde](/img/avgplayeragekdeengland.PNG)
 
 There are a greater number of teams with a average age of 27 and 28. Therefore, we would expect to see a greater number of wins for teams in this age range, which is the case, with the team with the most number of wins having an average age of about 28.5. The majority of teams, regardless of age, have less than 15 wins. 
 
-![scatterplotpremierleagueteamwins](/img/premierleaguenumberofwinsscatter.PNG)
+![scatterplotpremierleagueteamwins](/img/avgageenglandpointsscatter.PNG)
 
 In order to look further into the relationship between average player age and team success, I decided to look at the total number of points earned per team during the 2017/2018 Barclays Premier League season. This number includes points earned for both wins (3) and draws (1) and this point total in turn decides the winner of the competition. 
 
 I quickly realized that due to the complicated nesting structure of the dataset and the difficulties of linking points earned per game with team ID, I decided to use the [official data](https://www.premierleague.com/tables?co=1&se=79&ha=-1) from the Barclays Premier League website to manually create a dataframe of the total points earned per team during the 2017/2018 season. 
 
-![scatterplotpremierleagueteampoints](/img/premierleagueteamstotalpointsscatter.PNG)
+![scatterplotpremierleagueteampoints](/img/avgagetotalpointsengland.PNG)
 
 We see a similar distribution as the wins scatter plot due to there being a greater number of teams with an average age of 27 and 28. The majority of teams in this case, regardless of age, have 50 points or less. The team with the most points at 100, is 20 points ahead of its nearest neighbor, who earned 80 points. No teams with an average age below about 27.5 years and greater than about 28 years earned more than 50 points. 
 
