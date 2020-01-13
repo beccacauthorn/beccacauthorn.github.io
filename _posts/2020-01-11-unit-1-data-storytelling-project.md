@@ -6,21 +6,21 @@ bigimg: /img/450px-Ronaldinho_and_Khedira.jpg
 tags: [visualization, storytelling, soccer]
 ---
 
-I have been passionate about soccer (or football if you aren't from the U.S.) since I started playing the game at age 5. I loved the smell of the grass on a crisp game-day morning, the rush of adrenaline as I sped towards the ball, getting to know my teammates, and the excitement of learning new skills and strategies at each game and practice session. 
+I have been passionate about soccer (or football if you aren't from the U.S.) since I started playing the game at the age of 5. I loved the smell of the grass on a crisp game-day morning, the rush of adrenaline as I sped towards the ball, getting to know my teammates, and the excitement of learning new skills and strategies at each game and practice session. 
 
 As I have grown older and begun to follow professional leagues and competitions, I have become increasingly interested in how data and technology are being used to inform the game as well as allow players to stay at their peak for longer. In order to further explore this topic, I decided to use my first data storytelling project to look at what, if any, relationship there might be between average player age per team, and a team's number of wins or points. I found a [dataset](https://figshare.com/collections/Soccer_match_event_dataset/4415000/3) that had international competition as well as club competition data for 2017 and 2018.  
 
 I began my project with the player dataset in order to obtain each player's birthdate and the ID number of the current national team they were playing for. I then created a `players_new` dataset with just this information. 
 ![players](/img/playersdf.PNG)
 
-My next step was to look at the matches World Cup dataset in order to extract the team IDs of all 32 teams who played in the 2018 World Cup and merge this information with the players_new datatset. The challenge I ran into during this stage was that the World Cup teams dataset included some nested dictionaries. I used a list comprehension to iterate over the nested dictionary and obtain just the team IDs.
+My next step was to look at the matches World Cup dataset in order to extract the team IDs of all 32 teams who played in the 2018 World Cup and merge this information with the `players_new` datatset. The challenge I ran into during this stage was that the World Cup teams dataset included some nested dictionaries. I used a list comprehension to iterate over the nested dictionary and obtain just the team IDs.
 
 ```python
 teamIds = [list(match['teamsData'].keys()) for match in matches_list]
 teamIds_world_cup = np.unique(np.array(teamIds))
 ```
 
-I then created a new dataframe with the World Cup IDs and merged it with the players_new dataframe in order to obtain just the players that played in the World Cup.
+I then created a new dataframe with the World Cup IDs and merged it with the `players_new` dataframe in order to obtain just the players that played in the World Cup.
 
 ```python
 teams_df = pd.DataFrame({'WorldCupTeamIDs': teamIds_world_cup})
@@ -33,7 +33,7 @@ The next challenge was to use the players birth date to approximate their age at
 player_age = (pd.Timestamp('2018-06-14') - pd.to_datetime(players_teams_merged['birthDate'])) / np.timedelta64(1, 'Y')
 ```
 
-The following step was to use groupby 'currentNationalTeamId' and find the average age of each team.
+The following step was to use groupby `currentNationalTeamId` and find the average age of each team.
 
 ```python
 team_age_mean = players_teams_merged.groupby(by='WorldCupTeamIDs')[['player_age']].mean()
