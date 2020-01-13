@@ -50,11 +50,11 @@ wins = winner_df.groupby('WorldCupTeamIDs')['WorldCupTeamIDs'].count()
 team_age_mean['wins'] = wins
 ```
 
-Looking at the Kernel Density Estimation plot(kde) of teams average age, we see a steady increase in terms of density of teams with a average age of 26, 27, and 28, and then see this density take a sharp drop. The range of the plot is also fairly narrow, with average team age being no less than 24 and not greater than 31. 
+Looking at the Kernel Density Estimation plot (KDE) of teams average age, we see a steady increase in terms of density of teams with aN average age of 26, 27, and 28, and then see this density take a sharp drop. The range of the plot is also fairly narrow, with average team age being no less than 24 and not greater than 31. 
 
 ![kdeplot](/img/kdeplotworldcupteams.PNG)
 
-Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create survivor bias. Additionally, there are a greater number of teams with a average age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
+Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create survivor bias. Additionally, there are a greater number of teams with aN average age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
 
 ![scatterplot](/img/scatterplotworldcupteams.PNG)
 
