@@ -15,10 +15,10 @@ I began my project with the player dataset in order to obtain each player's birt
 
 My next step was to look at the matches World Cup dataset in order to extract the team IDs of all 32 teams who played in the 2018 World Cup and merge this information with the players_new datatset. The challenge I ran into during this stage was that the World Cup teams dataset included some nested dictionaries. I used a list comprehension to iterate over the nested dictionary and obtain just the team IDs: 
 
-~~~
+```python
 teamIds = [list(match['teamsData'].keys()) for match in matches_list]
 teamIds_world_cup = np.unique(np.array(teamIds))
-~~~
+'''
 
 I then created a new dataframe with the World Cup IDs and merged it with the players_new dataframe in order to obtain just the players that played in the World Cup:
 
