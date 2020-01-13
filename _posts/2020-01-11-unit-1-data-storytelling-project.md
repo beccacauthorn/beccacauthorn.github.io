@@ -34,14 +34,14 @@ pd.Timestamp('2018-06-01')
 player_age = (pd.Timestamp('2018-06-14') - pd.to_datetime(players_teams_merged['birthDate'])) / np.timedelta64(1, 'Y')
 ```
 
-The following step was to use groupby 'currentNationalTeamId' and find the median age of each team.
+The following step was to use groupby 'currentNationalTeamId' and find the average age of each team.
 
 ```python
 team_age_mean = players_teams_merged.groupby(by='WorldCupTeamIDs')[['player_age']].mean()
 team_age_mean.player_age = pd.to_numeric(team_age_mean.player_age)
 ```
 
-To look at the relationship between median team age and number of wins, I created a new column in my dataframe with each of the teams total number of wins during the competition.
+To look at the relationship between average team age and number of wins, I created a new column in my dataframe with each of the teams total number of wins during the competition.
 
 ```python
 winner_list = [str(match['winner']) for match in matches_list]
@@ -50,21 +50,21 @@ wins = winner_df.groupby('WorldCupTeamIDs')['WorldCupTeamIDs'].count()
 team_age_mean['wins'] = wins
 ```
 
-Looking at the Kernel Density Estimation plot(kde) of teams median age, we see a steady increase in terms of density of teams with a median age of 26, 27, and 28, and then see this density take a sharp drop. The range of the plot is also fairly narrow, with median team age being no less than 24 and not greater than 31. 
+Looking at the Kernel Density Estimation plot(kde) of teams average age, we see a steady increase in terms of density of teams with a average age of 26, 27, and 28, and then see this density take a sharp drop. The range of the plot is also fairly narrow, with average team age being no less than 24 and not greater than 31. 
 
 ![kdeplot](/img/kdeplotworldcupteams.PNG)
 
-Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create survivor bias. Additionally, there are a greater number of teams with a median age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
+Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create survivor bias. Additionally, there are a greater number of teams with a average age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
 
 ![scatterplot](/img/scatterplotworldcupteams.PNG)
 
 In order to mitigate the effects of survivor bias, I decieded to run the same code on this dataset but using the Barclays Premier League 2017/2018 competition data due to all teams playing the same number of matches (38). 
 
-The kde plot of the Premier League teams median age shows a fairly small spread, with median team age falling between about 26-28 years. We also see a sharper increase in terms of density of teams from 27 to 28 years and a sharp drop in median age after 28 years. 
+The kde plot of the Premier League teams average age shows a fairly small spread, with average team age falling between about 26-28 years. We also see a sharper increase in terms of density of teams from 27 to 28 years and a sharp drop after 28 years. 
 
 ![engladplayerskde](/img/premierleaguemedianplayeragekde.PNG)
 
-There are a greater number of teams with a median age of 27 and 28. Therefore, we would expect to see a greater number of wins for teams in this age range, which is the case, with the team with the most number of wins having an average age of about 28.5. The majority of teams, regardless of age, have less than 15 wins. 
+There are a greater number of teams with a average age of 27 and 28. Therefore, we would expect to see a greater number of wins for teams in this age range, which is the case, with the team with the most number of wins having an average age of about 28.5. The majority of teams, regardless of age, have less than 15 wins. 
 
 ![scatterplotpremierleagueteamwins](/img/premierleaguenumberofwinsscatter.PNG)
 
@@ -74,7 +74,7 @@ I quickly realized that due to the complicated nesting structure of the dataset 
 
 ![scatterplotpremierleagueteampoints](/img/premierleagueteamstotalpointsscatter.PNG)
 
-We see a similar distribution as the wins scatter plot due to there being a greater number of teams with a median age of 27 and 28. The majority of teams in this case, regardless of age, have 50 points or less. The team with the most points at 100, is 20 points ahead of its nearest neighbor who earned 80 points. No teams with an average age below about 27.5 years and greater than about 28 years earned more than 50 points. 
+We see a similar distribution as the wins scatter plot due to there being a greater number of teams with a average age of 27 and 28. The majority of teams in this case, regardless of age, have 50 points or less. The team with the most points at 100, is 20 points ahead of its nearest neighbor who earned 80 points. No teams with an average age below about 27.5 years and greater than about 28 years earned more than 50 points. 
 
 I was surprised to find that teams with a higher average age tended to have more wins overall. It seems that players reach a performance peak around this time where peak fitness levels are coinciding with a high level of professional experience. On the other hand, I was not surprised to see a sharp drop in average team age at around 29. Soccer is a very physically demanding sport and players are expected to maintain a high level of play throughout the duration of their club and international careers. I will be interested to see if overtime, with increased use of technology in soccer and new scientific and medical advancements, leads to an increase in average team age. In the future, I would like to perform the same code on additional league and international competitions around the world to see if my findings are replicated on a larger scale. 
 
