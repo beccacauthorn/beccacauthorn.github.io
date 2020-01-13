@@ -27,10 +27,9 @@ teams_df = pd.DataFrame({'WorldCupTeamIDs': teamIds_world_cup})
 players_teams_merged = pd.merge(players_new, teams_df, left_on='currentNationalTeamIdStr', right_on= 'WorldCupTeamIDs', how='inner')
 ```
 
-The next challenge was to use the players birth date to approximate their age at the time of the 2018 World Cup. I decided to use the starting month of the World Cup competition, June 1, 2018, in order to approximate the players ages.
+The next challenge was to use the players birth date to approximate their age at the time of the 2018 World Cup. I decided to use the starting day of the World Cup competition, June 14, 2018, in order to approximate the players ages.
 
 ```python
-pd.Timestamp('2018-06-01')
 player_age = (pd.Timestamp('2018-06-14') - pd.to_datetime(players_teams_merged['birthDate'])) / np.timedelta64(1, 'Y')
 ```
 
