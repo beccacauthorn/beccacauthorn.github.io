@@ -22,33 +22,33 @@ teamIds_world_cup = np.unique(np.array(teamIds))
 
 I then created a new dataframe with the World Cup IDs and merged it with the players_new dataframe in order to obtain just the players that played in the World Cup:
 
-~~~
+```python
 teams_df = pd.DataFrame({'WorldCupTeamIDs': teamIds_world_cup})
 players_teams_merged = pd.merge(players_new, teams_df, left_on='currentNationalTeamIdStr', right_on= 'WorldCupTeamIDs', how='inner')
-~~~
+```
 
 The next challenge was to use the players birth date to approximate their age at the time of the 2018 World Cup. I decided to use the starting month of the World Cup competition, June 1, 2018, in order to approximate the players' ages: 
 
-~~~
+```python
 pd.Timestamp('2018-06-01')
 player_age = (pd.Timestamp('2018-06-14') - pd.to_datetime(players_teams_merged['birthDate'])) / np.timedelta64(1, 'Y')
-~~~
+```
 
 The following step was to use groupby 'currentNationalTeamId' and find the median age of each team:
 
-~~~
+```python
 team_age_mean = players_teams_merged.groupby(by='WorldCupTeamIDs')[['player_age']].mean()
 team_age_mean.player_age = pd.to_numeric(team_age_mean.player_age)
-~~~
+```
 
 To look at the relationship between median team age and number of wins, I created a new column in my dataframe with each of the teams total number of wins during the competition:
 
-~~~
+```python
 winner_list = [str(match['winner']) for match in matches_list]
 winner_df = pd.DataFrame({'WorldCupTeamIDs': winner_list})
 wins = winner_df.groupby('WorldCupTeamIDs')['WorldCupTeamIDs'].count()
 team_age_mean['wins'] = wins
-~~~
+```
 
 Looking at the Kernel Density Estimation plot(kde) of teams median age, we see a steady increase in terms of density of teams with a median age of 26, 27, and 28, and then see this density take a sharp drop. The range of the plot is also fairly narrow, with median team age being no less than 24 and not greater than 31. 
 
