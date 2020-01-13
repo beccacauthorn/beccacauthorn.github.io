@@ -54,7 +54,7 @@ Looking at the Kernel Density Estimation plot (KDE) of teams average age, we see
 
 ![kdeplot](/img/kdeplotworldcupteams.PNG)
 
-Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create survivor bias. Additionally, there are a greater number of teams with aN average age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
+Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create survivor bias. Additionally, there are a greater number of teams with an average age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
 
 ![scatterplot](/img/scatterplotworldcupteams.PNG)
 
@@ -74,7 +74,7 @@ I quickly realized that due to the complicated nesting structure of the dataset 
 
 ![scatterplotpremierleagueteampoints](/img/premierleagueteamstotalpointsscatter.PNG)
 
-We see a similar distribution as the wins scatter plot due to there being a greater number of teams with a average age of 27 and 28. The majority of teams in this case, regardless of age, have 50 points or less. The team with the most points at 100, is 20 points ahead of its nearest neighbor who earned 80 points. No teams with an average age below about 27.5 years and greater than about 28 years earned more than 50 points. 
+We see a similar distribution as the wins scatter plot due to there being a greater number of teams with an average age of 27 and 28. The majority of teams in this case, regardless of age, have 50 points or less. The team with the most points at 100, is 20 points ahead of its nearest neighbor, who earned 80 points. No teams with an average age below about 27.5 years and greater than about 28 years earned more than 50 points. 
 
 I was surprised to find that teams with a higher average age tended to have more wins overall. It seems that players reach a performance peak around this time where peak fitness levels are coinciding with a high level of professional experience. On the other hand, I was not surprised to see a sharp drop in average team age at around 29. Soccer is a very physically demanding sport and players are expected to maintain a high level of play throughout the duration of their club and international careers. I will be interested to see if overtime, with increased use of technology in soccer and new scientific and medical advancements, leads to an increase in average team age. In the future, I would like to perform the same code on additional league and international competitions around the world to see if my findings are replicated on a larger scale. 
 
