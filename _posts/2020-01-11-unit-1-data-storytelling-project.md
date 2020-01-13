@@ -18,7 +18,7 @@ My next step was to look at the matches World Cup dataset in order to extract th
 ```python
 teamIds = [list(match['teamsData'].keys()) for match in matches_list]
 teamIds_world_cup = np.unique(np.array(teamIds))
-'''
+```
 
 I then created a new dataframe with the World Cup IDs and merged it with the players_new dataframe in order to obtain just the players that played in the World Cup:
 
