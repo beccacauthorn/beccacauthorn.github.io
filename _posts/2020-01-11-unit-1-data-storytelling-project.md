@@ -53,11 +53,11 @@ Looking at the Kernel Density Estimation plot (KDE) of teams average age, we see
 
 ![kdeplot](/img/kdeplotworldcupteams.PNG)
 
-Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create survivor bias. Additionally, there are a greater number of teams with an average age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
+Due to the World Cup being a knockout competition, most teams will not play the same number of matches. This situation can create [survivor bias](https://en.wikipedia.org/wiki/Survivorship_bias). Additionally, there are a greater number of teams with an average age of 27 and 28, which can also create bias in terms of the number of wins we see in this age range. 
 
 ![scatterplot](/img/scatterplotworldcupteams.PNG)
 
-In order to mitigate the effects of [survivor bias](https://en.wikipedia.org/wiki/Survivorship_bias), I decieded to run the same code that I ran on the World Cup dataset but on the Barclays Premier League 2017/2018 competition dataset due to all teams playing the same number of matches (38). 
+In order to mitigate the effects of survivor bias, I decided to run the same code that I ran on the World Cup dataset but on the Barclays Premier League 2017/2018 competition dataset due to all teams playing the same number of matches (38). 
 
 The KDE plot of the Premier League teams average age shows a fairly small spread, with average team age falling between about 26-28 years. We also see a sharper increase in terms of density of teams from 27 to 28 years and a sharp drop after 28 years. 
 
