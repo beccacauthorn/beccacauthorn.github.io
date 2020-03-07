@@ -21,3 +21,5 @@ Using a random forest classifier I was only able to increase the accuracy above 
 In addition to permutation importance, I created a partial dependence plot in order to look more closely at the relationship between prisoners' age at the time of release and the target feature. 
 
 ![PDPAge](/img/pdpplotunit2project.PNG)
+
+Where 1= Under the age of 25, 2= aged 25-34, 3= aged 35-44, 4= aged 45-54, and 5= aged 55 and Older. Here we see that increasing age correlates to lower chance of recidivism. 
