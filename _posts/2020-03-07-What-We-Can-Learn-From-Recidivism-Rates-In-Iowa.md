@@ -24,6 +24,6 @@ In addition to permutation importance, I created a partial dependence plot in or
 
 Where 1= Under the age of 25, 2= aged 25-34, 3= aged 35-44, 4= aged 45-54, and 5= aged 55 and Older. Here we see that increasing age correlates to a lower chance of recidivism. 
 
-In order to gain more insight into not only the errors being made by my model but also the types of errors that were being made, I created a confusion matrix. 
+In order to gain more insight into not only the errors being made by my model but also the types of errors that were being made, I created a confusion matrix (1 means 'yes recidivism' and 0 means 'no recidivism'). 
 
 ![ConfusionMatrix](/img/confusionmatrixunit2project.PNG)
