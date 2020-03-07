@@ -12,7 +12,11 @@ One policy area that has received increased national attention in the past few e
 
 I wanted to look at how well a model might be able to predict recidivism committed by offenders released from prison based on the initial offense class and type of the crime, the characteristics of the offender, such as race and age group, and the release type, such as ordinary end of sentence or released on parole. Additionally, I was particulary interested in looking at how one category of the dataset, 'part of target population', contirbuted to predicting recidivism. This particular category of the dataset indicated whether or not a prisoner was a participant in The Department of Corrections program created with the intention to reduce recidivism rates for prisoners who are on parole. 
 
-Using a random forest classifier I was only able to increase the accuracy above the majority classifier baseline by about 2%. I then looked to model tuning in order to find the best machine learning model hyperparameters for my data set. I utilized Random Search and ended up with the same accuaracy increase of 2% above the baseline. 
+![datasetgraphic](/img/datasetproject2head.PNG)
+
+Using a random forest classifier I was only able to increase the accuracy above the majority classifier baseline by about 2%. I then looked to model tuning in order to find the best machine learning model hyperparameters for my data set. I utilized Random Search and ended up with the same accuaracy increase of 2% above the baseline. I then turned to permutation importance to look more closely at what features were having the biggest impact on my model. 
+
+![kdeplot](/img/datasetproject2head.PNG)
 
 ```python
 teamIds = [list(match['teamsData'].keys()) for match in matches_list]
