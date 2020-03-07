@@ -3,7 +3,7 @@ layout: post
 title: Tracking Recidivism in Iowa
 subtitle: Its harder than you think 
 bigimg:
-tags: [visualization, storytelling, crime]
+tags: [visualization, storytelling, policy]
 ---
 
 Data tracking and analysis can help policymakers evaluate the effectiveness of policy decisions and inform changes to existing proposals as well as aid in the shaping of new policy. It is important for those making these decisions to have the tools to properly monitor outcomes in order to create lasting and effective change. This is especially important when considering the fact that most policies are utilzing finite resources and having real effects on peoples' lives.  
@@ -18,5 +18,6 @@ Using a random forest classifier I was only able to increase the accuracy above 
 
 ![permutationimportancechart](/img/permutationimportanceunit2project.PNG)
 
+In addition to permutation importance, I created a partial dependence plot in order to look more closely at the relationship between prisoners' age at the time of release and the target feature. 
 
-
+![PDPAge](/img/pdpplotunit2project.PNG)
