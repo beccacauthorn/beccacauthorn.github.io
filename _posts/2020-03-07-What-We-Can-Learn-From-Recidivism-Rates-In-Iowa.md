@@ -32,6 +32,6 @@ The confusion matrix shows us that accuracy is around 66% and that precision, or
 
 Despite varying the features and model type, the accuracy never increased more than 3% above the baseline. Recidivism is difficult to predict with the features available in this dataset. 
 
-![RecidivismChart](/img/recidivismchartunit2project.PNG)
+![RecidivismChart](/img/recidivismonparoleinprogram.PNG)
 
-My recommendations to the state of Iowa are two-fold. First, I would recommend that additional data is collected on these prisioners,  including increased data around social and economic factors. Second, I would recommend making changes to the Department of Corrections program aimed at reducing recidivism rates for prisoners who are on parole. As seen clearly in the chart above, being a part of this program did not influence whether or not a prisioner would return to prison. 
+My recommendations to the state of Iowa are two-fold. First, I would recommend that additional data is collected on these prisioners,  including increased data around social and economic factors. Second, I would recommend making changes to the Department of Corrections program aimed at reducing recidivism rates for prisoners who are on parole. As seen in the chart above, for those prisoners on parole who were not part of the program, 52% committed another crime. For those prisoners on parole who were part of the program, 64% committed another crime. 
