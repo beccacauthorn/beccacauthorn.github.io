@@ -29,3 +29,7 @@ In order to gain more insight into not only the errors being made by my model bu
 ![ConfusionMatrix](/img/confusionmatrixunit2project.PNG)
 
 The confusion matrix shows us that accuracy is around 66% and that precision, or positive predictive value, is 55%. 
+
+Despite varying the features and model type, the accuaracy never increased more than 3% above the baseline. Recidivism is difficult to predict with the features available in this dataset. 
+
+![RecidivismChart](/img/recidivismchartunit2project.PNG)
