@@ -30,6 +30,8 @@ In order to gain more insight into not only the errors being made by my model bu
 
 The confusion matrix shows us that accuracy is around 66% and that precision, or positive predictive value, is 55%. 
 
-Despite varying the features and model type, the accuaracy never increased more than 3% above the baseline. Recidivism is difficult to predict with the features available in this dataset. 
+Despite varying the features and model type, the accuracy never increased more than 3% above the baseline. Recidivism is difficult to predict with the features available in this dataset. 
 
 ![RecidivismChart](/img/recidivismchartunit2project.PNG)
+
+My recommendations to the state of Iowa are two-fold. First, I would recommend that additional data is collected on these prisioners,  including increased data around social and economic factors. Second, I would recommend making changes to The Department of Corrections program created to reduce recidivism rates for prisoners who are on parole. As seen clearly in the chart above, prisoners who were part of this program 
