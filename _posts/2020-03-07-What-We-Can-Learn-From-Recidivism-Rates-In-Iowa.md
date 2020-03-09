@@ -27,3 +27,5 @@ Here we see that increasing age correlates to a lower chance of recidivism.
 In order to gain more insight into not only the errors being made by my model but also the types of errors that were being made, I created a confusion matrix (1 means 'yes recidivism' and 0 means 'no recidivism'). 
 
 ![ConfusionMatrix](/img/confusionmatrixunit2project.PNG)
+
+The confusion matrix shows us that accuracy is around 66% and that precision, or positive predictive value, is 55%. 
