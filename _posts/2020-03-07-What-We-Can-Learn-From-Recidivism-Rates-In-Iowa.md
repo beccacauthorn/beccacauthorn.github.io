@@ -14,7 +14,7 @@ I wanted to look at how well a model might be able to predict recidivism committ
 
 ![datasetgraphic](/img/datasetproject2head.PNG)
 
-Using a random forest classifier I was only able to increase the accuracy above the majority classifier baseline by about 2%. I then looked to model tuning in order to find the best machine learning model hyperparameters for my data set. I utilized Random Search and ended up with the same accuaracy increase of 3% above the baseline. I then turned to permutation importance to look more closely at what features were having the biggest impact on my model. According to the permutation importance chart below, a prisoners' age is the most important feature in the model. 
+Using a random forest classifier I was only able to increase the accuracy above the majority classifier baseline by about 2%, from 65% to 67%. I then looked to model tuning in order to find the best machine learning model hyperparameters for my data set. I utilized Random Search and ended up with the same accuracy increase of 3% above the baseline. I then turned to permutation importance to look more closely at what features were having the biggest impact on my model. According to the permutation importance chart below, a prisoners' age is the most important feature in the model. 
 
 ![permutationimportancechart](/img/permutationimportanceunit2project.PNG)
 
