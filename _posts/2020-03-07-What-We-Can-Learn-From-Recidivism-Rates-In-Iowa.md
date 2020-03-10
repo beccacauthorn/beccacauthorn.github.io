@@ -6,7 +6,7 @@ bigimg:
 tags: [visualization, storytelling, policy]
 ---
 
-Data tracking and analysis can help policymakers evaluate the effectiveness of policy decisions and inform changes to existing proposals as well as aid in the shaping of new policy. It is important for those making these decisions to have the tools to properly monitor outcomes in order to create lasting and effective change. This is especially important when considering the fact that most policies are utilzing finite resources and having real effects on peoples' lives.  
+Data tracking and analysis can help policymakers evaluate the effectiveness of policy decisions and inform changes to existing proposals as well as aid in the shaping of new policy. It is important for those making these decisions to have the tools to properly monitor outcomes in order to create lasting and effective change. This is especially important when considering the fact that most policies are utilizing finite resources and having real effects on peoples' lives.  
 
 One policy area that has received increased national attention in the past few election cycles has been the criminal justice system. Citizens, lawmakers, and advocacy groups in the United States are asking questions about why the U.S. has some of the highest rates of incarceration and recidivism in the [world](https://www.businessinsider.com/why-norways-prison-system-is-so-successful-2014-12). In order to further explore this topic, I wanted to look specifically at recidivism rates and how policy might influence these rates. I found a [dataset](https://www.kaggle.com/slonnadube/recidivism-for-offenders-released-from-prison) that tracked three year recidivism rates for prisoners in the state of Iowa.
 
