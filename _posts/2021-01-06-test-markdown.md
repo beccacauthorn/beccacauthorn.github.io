@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building a Product For The Restless Traveler’s Heart 
-subtitle: Planning A Trip 
+subtitle: A New Trip Planning Tool
 gh-repo: https://github.com/Lambda-School-Labs/LabsPT13-Resfeber-B-DS
 gh-badge: []
 tags: [travel, product development, professional development]
