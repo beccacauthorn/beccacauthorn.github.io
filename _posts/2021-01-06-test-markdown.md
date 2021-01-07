@@ -53,7 +53,7 @@ For future product releases, we hope to add these additional features:
 * User can add excursions, accommodations, entertainment, etc., to their itinerary.
 * Within each itinerary item, the user will be able to select the activity and build a checklist, add notes, upload documents, embed links, etc.
 * Users will be able to access flight information and prices as well as view/ track flights.This feature will alert the user via push notification, if any of the pinned flights are delayed.
-* User will have the ability to add flight information, hotel confirmation, and information that pertains to their booked travel. This would provide the user a way to organize and track their upcoming travel,, add comments/ notes, and build upon their itinerary as needed. 
+* User will have the ability to add flight information, hotel confirmation, and information that pertains to their booked travel. This would provide the user a way to organize and track their upcoming travel, add comments/ notes, and build upon their itinerary as needed. 
 
 ## Professional and Personal Growth 
 
