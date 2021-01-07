@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Building a Product For The Restless Traveler’s Heart 
-subtitle: 
+subtitle: Planning A Trip 
 gh-repo: https://github.com/Lambda-School-Labs/LabsPT13-Resfeber-B-DS
 gh-badge: []
 tags: [travel, product development, professional development]
@@ -32,9 +32,9 @@ The technical decisions stated above that we had to address as a team proved cha
 
 A challenge that we did not foresee was the lack of complexity of the gas price data, with model inputs only including month, day, and year. In turn, our gas price predictions were exponentially increasing gas prices into the future. We recognized that this was not a robust model due to the real world realities of how supply and demand around gas prices actually operate, with both peaks and troughs present overtime. In order to improve model performance I discussed with my team the necessity of creating a new feature: for week x, I added the price of gas at week x-1 and created a new column with this information. We then explored utilizing this feature to predict gas prices further into the future in different regions of the country. Additionally, after running several types of models, we decided as a team to utilize a regression model as opposed to a neural network for predicting prices. Due to our data lacking complexity, our neural network models were overfitting and providing poor predictive performance compared to the regression models we were running. 
 
-![Regression Model](https://github.com/beccacauthorn/beccacauthorn.github.io/blob/master/img/Regression%20models%20for%20gas%20prices%20for%20blog%20post.png){: .center-block :}
+![Regression Model](/img/Regression%20models%20for%20gas%20prices%20for%20blog%20post.png){: .center-block :}
 
-![Gas Price Visualization](https://github.com/beccacauthorn/beccacauthorn.github.io/blob/master/img/Gas%20Price%20Visualization%20For%20Labs%20Blog%20Post%20.png){: .center-block :}
+![Gas Price Visualization](/img/Gas%20Price%20Visualization%20For%20Labs%20Blog%20Post%20.png){: .center-block :}
 
 ## The Journey Never Truly Ends: Results and Future Implications
 
@@ -43,11 +43,11 @@ At this point in our project timeline, our product includes the following featur
 * User can create a trip and has the ability to search for destinations and build a trip itinerary with a starting and ending destination
 * User can estimate a trip’s gas and Airbnb costs, and choose between multiple options
 
-![Product Homepage](https://github.com/beccacauthorn/beccacauthorn.github.io/blob/master/img/Labs%20Website%201%20Pic.png){: .center-block :}
+![Product Homepage](/img/Labs%20Website%201%20Pic.png){: .center-block :}
 
-![Create a Trip](https://github.com/beccacauthorn/beccacauthorn.github.io/blob/master/img/Create%20A%20Trip%20Labs%20Project%20.png){: .center-block :}
+![Create a Trip](/img/Create%20A%20Trip%20Labs%20Project%20.png){: .center-block :}
 
-![Trip Map](https://github.com/beccacauthorn/beccacauthorn.github.io/blob/master/img/Creating%20a%20Trip%20Labs%20Project%20Photo.png){: .center-block :}
+![Trip Map](/img/Creating%20a%20Trip%20Labs%20Project%20Photo.png){: .center-block :}
 
 For future product releases, we hope to add these additional features:
 * User can add excursions, accommodations, entertainment, etc., to their itinerary.
